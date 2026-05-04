@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dave&rsquo;s Auto Details &middot; Official Detailer of the Sacramento Kings &middot; CA + AZ</title>
+<meta name="description" content="The official detailer of the Sacramento Kings. Premium ceramic coating, paint protection film, paint correction. Sacramento + Phoenix metros. Athlete-trusted, factory-finish work.">
+<meta name="theme-color" content="#0d1117">
+<meta property="og:title" content="Dave&rsquo;s Auto Details &middot; Sacramento Kings Official Detailer">
+<meta property="og:description" content="Premium ceramic, PPF, paint correction. Two-state operation. Sacramento + Phoenix.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --void:#0d1117;
+  --void-deep:#06080c;
+  --void-elev:#161b22;
+  --steel:#5b6679;
+  --chrome:#a8b2c1;
+  --electric:#3899ec;
+  --electric-bright:#5fceff;
+  --kings-purple:#5a2d81;
+  --safety:#f26d23;
+  --cream:#e8edf2;
+  --text:#e8edf2;
+  --text-muted:#8b95a4;
+  --text-dim:#5b6679;
+  --border:rgba(56,153,236,0.18);
+  --border-bright:rgba(56,153,236,0.45);
+  --electric-soft:rgba(56,153,236,0.07);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;background:var(--void-deep);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 70% 50% at 25% 0%,rgba(56,153,236,0.08),transparent 50%),radial-gradient(ellipse 60% 50% at 80% 100%,rgba(90,45,129,0.07),transparent 50%);pointer-events:none;z-index:0}
+
+nav{position:fixed;top:0;left:0;right:0;padding:14px 0;background:rgba(6,8,12,0.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,0.04);z-index:100}
+.nav-inner{max-width:1320px;margin:0 auto;padding:0 28px;display:flex;justify-content:space-between;align-items:center;gap:28px}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:0.08em;color:var(--cream);display:flex;align-items:baseline;gap:6px}
+.logo .em{color:var(--electric);font-style:italic;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:30px}
+.logo .sub{font-size:10px;color:var(--electric);letter-spacing:0.32em;font-weight:500;font-family:'Inter',sans-serif;text-transform:uppercase;margin-left:6px}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{font-size:11px;font-weight:600;letter-spacing:0.22em;color:var(--text-muted);text-transform:uppercase;transition:color 0.2s}
+.nav-links a:hover{color:var(--electric-bright)}
+.nav-cta{padding:10px 22px;background:var(--electric);color:var(--void-deep);border-radius:1px;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;transition:all 0.25s}
+.nav-cta:hover{background:var(--electric-bright);transform:translateY(-1px)}
+@media(max-width:980px){.nav-links a:not(.nav-cta){display:none}}
+
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=2400&q=80');background-size:cover;background-position:center;animation:kenburns 28s ease-in-out infinite alternate;filter:saturate(1.1) contrast(1.05)}
+@keyframes kenburns{0%{transform:scale(1.0)}100%{transform:scale(1.12) translate(-2%,-2%)}}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(6,8,12,0.88) 0%,rgba(6,8,12,0.6) 45%,rgba(13,17,23,0.3) 100%)}
+.hero-overlay::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 30% 70%,rgba(56,153,236,0.18),transparent 60%)}
+.hero-inner{position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:140px 28px 100px;width:100%}
+.kings-badge{display:inline-flex;align-items:center;gap:14px;padding:10px 18px;border:1px solid var(--kings-purple);border-radius:1px;background:rgba(90,45,129,0.15);font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--cream);margin-bottom:36px;font-weight:600}
+.kings-badge .crown{width:8px;height:8px;background:var(--kings-purple);border-radius:50%}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(64px,10vw,148px);line-height:0.92;letter-spacing:-0.005em;color:var(--cream);margin-bottom:24px;max-width:18ch}
+.hero h1 em{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;color:var(--electric);letter-spacing:-0.005em}
+.hero-divider{width:120px;height:2px;background:linear-gradient(90deg,var(--electric),transparent);margin:24px 0 32px}
+.hero-sub{font-family:'Inter',sans-serif;font-size:clamp(16px,1.6vw,20px);color:var(--text-muted);max-width:60ch;margin-bottom:48px;line-height:1.7;font-weight:300}
+.hero-sub strong{color:var(--cream);font-weight:600}
+.hero-cta-row{display:flex;gap:16px;flex-wrap:wrap}
+.cta-primary{display:block;width:fit-content;margin:0;padding:18px 38px;background:var(--electric);color:var(--void-deep);border-radius:1px;font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;transition:all 0.3s;box-shadow:0 14px 34px rgba(56,153,236,0.22);border:0;cursor:pointer;font-family:inherit}
+.cta-primary:hover{background:var(--electric-bright);transform:translateY(-2px)}
+.cta-ghost{display:inline-flex;align-items:center;gap:12px;padding:18px 28px;border:1px solid var(--border-bright);color:var(--cream);border-radius:1px;font-size:12px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;transition:all 0.25s}
+.cta-ghost:hover{background:var(--electric-soft);border-color:var(--electric-bright)}
+.hero-meta{position:absolute;bottom:60px;right:28px;z-index:2;text-align:right;max-width:300px}
+.hero-meta-label{font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--electric);margin-bottom:14px}
+.hero-meta-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 22px;text-align:left}
+.hero-meta-grid dt{font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--cream);letter-spacing:0.04em;line-height:1}
+.hero-meta-grid dd{font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-dim);margin-top:4px}
+@media(max-width:1080px){.hero-meta{display:none}}
+
+section{padding:120px 0;position:relative;z-index:1}
+.container{max-width:1320px;margin:0 auto;padding:0 28px}
+.section-eyebrow{font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:var(--electric);margin-bottom:18px;display:inline-flex;align-items:center;gap:14px;font-weight:600}
+.section-eyebrow::before{content:'';width:32px;height:1px;background:var(--electric)}
+.section-title{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(40px,5.5vw,72px);line-height:1;letter-spacing:-0.005em;color:var(--cream);margin-bottom:24px;max-width:22ch}
+.section-title em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--electric);font-weight:600;letter-spacing:0;display:inline-block}
+.section-sub{font-size:17px;color:var(--text-muted);max-width:62ch;line-height:1.7;margin-bottom:48px;font-weight:300}
+.section-sub strong{color:var(--cream);font-weight:500}
+
+.trust{background:var(--void);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:80px 0}
+.trust-header{text-align:center;margin-bottom:56px}
+.trust-header h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,4vw,52px);color:var(--cream);max-width:32ch;margin:0 auto 16px;line-height:1.05}
+.trust-header h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--electric);font-weight:600}
+.stat-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border:1px solid var(--border)}
+.stat-tile{padding:36px 18px;text-align:center;border-right:1px solid var(--border);background:rgba(22,27,34,0.5)}
+.stat-tile:last-child{border-right:0}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,4vw,54px);color:var(--electric);line-height:1;letter-spacing:-0.01em}
+.stat-num .small{font-size:0.55em;color:var(--electric-bright);margin-left:2px}
+.stat-label{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted);margin-top:14px;line-height:1.4}
+@media(max-width:980px){.stat-grid{grid-template-columns:repeat(3,1fr)}.stat-tile:nth-child(3){border-right:0}.stat-tile:nth-child(1),.stat-tile:nth-child(2),.stat-tile:nth-child(3){border-bottom:1px solid var(--border)}}
+@media(max-width:580px){.stat-grid{grid-template-columns:repeat(2,1fr)}.stat-tile{border-right:1px solid var(--border) !important;border-bottom:1px solid var(--border)}.stat-tile:nth-child(2n){border-right:0 !important}}
+
+.services{background:var(--void-deep)}
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:56px}
+@media(max-width:880px){.services-grid{grid-template-columns:1fr}}
+.service-card{position:relative;border-radius:1px;overflow:hidden;background:var(--void-elev);border:1px solid var(--border);aspect-ratio:5/3;transition:all 0.4s;cursor:pointer}
+.service-card:hover{transform:translateY(-6px);border-color:var(--border-bright)}
+.service-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 0.6s;filter:saturate(1.05)}
+.service-card:hover .service-img{transform:scale(1.06)}
+.service-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,8,12,0.1) 30%,rgba(6,8,12,0.96) 100%)}
+.service-meta{position:absolute;left:32px;right:32px;bottom:32px;color:var(--cream);z-index:2}
+.service-tag{display:inline-block;padding:5px 11px;background:var(--electric);color:var(--void-deep);font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;border-radius:1px;margin-bottom:14px}
+.service-card h3{font-family:'Bebas Neue',sans-serif;font-size:36px;line-height:1;color:var(--cream);margin-bottom:10px;letter-spacing:0.02em}
+.service-card h3 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--electric);font-weight:600}
+.service-card p{font-size:14px;color:var(--text-muted);line-height:1.55;font-weight:300;max-width:42ch}
+
+.gallery{background:var(--void)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
+@media(max-width:980px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.gallery-grid{grid-template-columns:1fr}}
+.gallery-card{position:relative;aspect-ratio:1/1;border-radius:1px;overflow:hidden;border:1px solid var(--border);transition:all 0.4s}
+.gallery-card:hover{transform:translateY(-4px);border-color:var(--border-bright)}
+.gallery-split{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr}
+.gallery-half{position:relative;background-size:cover;background-position:center}
+.gallery-half::after{content:attr(data-label);position:absolute;top:14px;left:14px;padding:5px 10px;background:rgba(6,8,12,0.85);color:var(--cream);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;border-radius:1px;backdrop-filter:blur(8px)}
+.gallery-after::after{background:rgba(56,153,236,0.95);color:var(--void-deep)}
+.gallery-divider{position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--electric);transform:translateX(-50%);z-index:2;box-shadow:0 0 8px var(--electric)}
+.gallery-meta{position:absolute;left:0;right:0;bottom:0;padding:18px 22px;background:linear-gradient(180deg,rgba(6,8,12,0),rgba(6,8,12,0.96));color:var(--cream);z-index:3}
+.gallery-meta h4{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--cream);margin-bottom:4px;letter-spacing:0.02em}
+.gallery-meta p{font-size:11px;color:var(--text-muted);letter-spacing:0.06em}
+
+.method{background:var(--void-deep)}
+.method-header{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:flex-end;margin-bottom:64px}
+@media(max-width:880px){.method-header{grid-template-columns:1fr;gap:24px}}
+.method-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.method-step{padding:48px 28px;border-right:1px solid var(--border);position:relative}
+.method-step:last-child{border-right:0}
+.method-num{font-family:'Bebas Neue',sans-serif;font-size:78px;color:var(--electric);line-height:1;letter-spacing:-0.04em;display:block;margin-bottom:18px}
+.method-step h3{font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--cream);margin-bottom:12px;letter-spacing:0.02em}
+.method-step p{font-size:13px;color:var(--text-muted);line-height:1.7;font-weight:300}
+.method-step .duration{margin-top:20px;padding-top:16px;border-top:1px dashed var(--border-bright);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--electric-bright);font-weight:700}
+@media(max-width:980px){.method-steps{grid-template-columns:repeat(2,1fr)}.method-step:nth-child(2){border-right:0}.method-step:nth-child(1),.method-step:nth-child(2){border-bottom:1px solid var(--border)}}
+@media(max-width:580px){.method-steps{grid-template-columns:1fr}.method-step{border-right:0;border-bottom:1px solid var(--border)}.method-step:last-child{border-bottom:0}}
+
+.areas{background:var(--void)}
+.areas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
+@media(max-width:880px){.areas-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.areas-grid{grid-template-columns:1fr}}
+.area-card{position:relative;aspect-ratio:5/4;border-radius:1px;overflow:hidden;cursor:pointer;border:1px solid var(--border);transition:all 0.4s}
+.area-card:hover{transform:translateY(-4px);border-color:var(--border-bright)}
+.area-img{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(1.05);transition:transform 0.6s}
+.area-card:hover .area-img{transform:scale(1.06)}
+.area-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,8,12,0.1) 30%,rgba(6,8,12,0.96) 100%)}
+.area-meta{position:absolute;left:22px;right:22px;bottom:22px;color:var(--cream);z-index:2}
+.area-meta h3{font-family:'Bebas Neue',sans-serif;font-size:30px;color:var(--cream);line-height:1;margin-bottom:8px;letter-spacing:0.02em}
+.area-meta p{font-size:11px;color:var(--text-muted);letter-spacing:0.14em;text-transform:uppercase}
+.area-stat{display:inline-block;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--electric-bright);font-size:14px;margin-top:8px;font-weight:600}
+
+.guide{background:var(--void-deep);position:relative;overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.guide::before{content:'';position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=2000&q=70');background-size:cover;background-position:center;opacity:0.10;filter:saturate(0.9)}
+.guide-inner{position:relative;display:grid;grid-template-columns:1.1fr 0.9fr;gap:80px;align-items:center}
+@media(max-width:980px){.guide-inner{grid-template-columns:1fr;gap:48px}}
+.guide-text h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5.5vw,76px);line-height:0.98;color:var(--cream);margin-bottom:24px;letter-spacing:-0.005em;max-width:18ch}
+.guide-text h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--electric);font-weight:600}
+.guide-text p{font-size:17px;color:var(--text-muted);max-width:54ch;line-height:1.75;margin-bottom:24px;font-weight:300}
+.guide-text p strong{color:var(--cream);font-weight:500}
+.guide-features{margin:32px 0 40px;list-style:none}
+.guide-features li{padding:14px 0;border-top:1px solid var(--border);font-size:14px;color:var(--text-muted);display:flex;align-items:flex-start;gap:14px;font-weight:300}
+.guide-features li::before{content:'';width:8px;height:8px;background:var(--electric);border-radius:50%;flex-shrink:0;margin-top:8px}
+.guide-form{display:flex;gap:10px;max-width:480px;flex-wrap:wrap}
+.guide-form input{flex:1;min-width:200px;padding:18px 22px;background:rgba(22,27,34,0.7);border:1px solid var(--border-bright);color:var(--cream);font-size:14px;font-family:inherit;border-radius:1px}
+.guide-form input::placeholder{color:var(--text-dim)}
+.guide-form input:focus{outline:none;border-color:var(--electric-bright)}
+.guide-disclaimer{font-size:11px;color:var(--text-dim);margin-top:14px;letter-spacing:0.04em}
+.guide-cover{aspect-ratio:3/4;background:linear-gradient(155deg,var(--void-elev) 0%,var(--void) 100%);border:1px solid var(--border-bright);border-radius:1px;padding:56px 40px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 40px 80px rgba(0,0,0,0.5),0 0 0 1px rgba(56,153,236,0.1) inset;transform:rotate(-2deg);transition:transform 0.4s}
+.guide-cover:hover{transform:rotate(0deg) scale(1.02)}
+.guide-cover-tag{font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--electric);font-weight:700}
+.guide-cover-meta-top{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-dim);margin-top:14px}
+.guide-cover-title{font-family:'Bebas Neue',sans-serif;font-size:48px;line-height:1;color:var(--cream);letter-spacing:0.02em}
+.guide-cover-title em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--electric-bright);font-weight:600}
+.guide-cover-meta{font-size:11px;color:var(--text-muted);letter-spacing:0.14em;text-transform:uppercase;border-top:1px solid var(--border);padding-top:18px}
+
+.founder{background:var(--void);position:relative;overflow:hidden}
+.founder::after{content:'';position:absolute;top:-200px;right:-200px;width:760px;height:760px;background:radial-gradient(circle,rgba(56,153,236,0.13),transparent 60%);pointer-events:none}
+.founder-inner{display:grid;grid-template-columns:0.9fr 1.1fr;gap:80px;align-items:center;position:relative;z-index:1}
+@media(max-width:980px){.founder-inner{grid-template-columns:1fr;gap:48px}}
+.founder-photo{aspect-ratio:4/5;background-image:url('https://images.unsplash.com/photo-1542362567-b07e54358753?w=1400&q=80');background-size:cover;background-position:center;border-radius:1px;border:1px solid var(--border-bright);position:relative;overflow:hidden}
+.founder-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(6,8,12,0.6))}
+.founder-quote{position:absolute;bottom:32px;left:32px;right:32px;color:var(--cream);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;line-height:1.4;z-index:2;font-weight:500}
+.founder-quote::before{content:'\201C';position:absolute;top:-30px;left:-12px;font-size:80px;color:var(--electric);opacity:0.6;line-height:1;font-weight:600}
+.founder-text h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5.5vw,72px);line-height:0.98;color:var(--cream);margin-bottom:24px;letter-spacing:-0.005em}
+.founder-text h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--electric);font-weight:600}
+.founder-text p{font-size:16px;color:var(--text-muted);line-height:1.8;margin-bottom:18px;font-weight:300}
+.founder-text p strong{color:var(--cream);font-weight:500}
+.founder-creds{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:32px;border-top:1px solid var(--border);padding-top:28px}
+.founder-cred{padding:0 14px;border-right:1px solid var(--border)}
+.founder-cred:nth-child(2n){border-right:0;padding-right:0}
+.founder-cred:nth-child(2n+1){padding-left:0}
+.founder-cred-tag{font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--electric);line-height:1;letter-spacing:0.02em}
+.founder-cred-label{font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-muted);margin-top:6px;line-height:1.4}
+
+.testimonials{background:var(--void-deep);border-top:1px solid var(--border)}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+@media(max-width:880px){.testimonial-grid{grid-template-columns:1fr}}
+.testimonial-card{padding:36px 32px;background:rgba(22,27,34,0.55);border:1px solid var(--border);border-radius:1px;position:relative;transition:all 0.3s}
+.testimonial-card:hover{border-color:var(--border-bright);transform:translateY(-3px)}
+.testimonial-card::before{content:'\201C';position:absolute;top:14px;left:24px;font-family:'Cormorant Garamond',serif;font-size:84px;color:var(--electric);opacity:0.25;line-height:1;font-weight:600}
+.testimonial-stars{color:var(--electric);font-size:14px;letter-spacing:2px;margin-bottom:18px;padding-top:24px}
+.testimonial-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;line-height:1.55;color:var(--text);margin-bottom:24px;font-weight:500}
+.testimonial-cite{font-size:12px;color:var(--electric);font-weight:700;letter-spacing:0.06em;border-top:1px solid var(--border);padding-top:14px}
+.testimonial-cite-meta{display:block;color:var(--text-dim);font-weight:400;margin-top:4px;font-style:italic;font-size:11px;letter-spacing:0.04em}
+
+.press{background:var(--void);border-top:1px solid var(--border);padding:80px 0}
+.press-header{text-align:center;margin-bottom:48px}
+.press-header h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,3.5vw,44px);color:var(--cream);max-width:32ch;margin:0 auto;line-height:1.1}
+.press-header h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--electric);font-weight:600}
+.press-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:880px){.press-grid{grid-template-columns:repeat(2,1fr)}}
+.press-card{padding:32px 24px;background:rgba(22,27,34,0.5);border:1px solid var(--border);border-radius:1px;text-align:center;transition:all 0.3s}
+.press-card:hover{border-color:var(--border-bright);transform:translateY(-3px)}
+.press-card-tag{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--electric);line-height:1;margin-bottom:14px;letter-spacing:0.02em}
+.press-card-label{font-size:11px;color:var(--text-muted);letter-spacing:0.14em;text-transform:uppercase;line-height:1.5}
+
+.final{background:var(--void-deep);position:relative;overflow:hidden}
+.final::before{content:'';position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=2000&q=70');background-size:cover;background-position:center;opacity:0.18;filter:saturate(1.05)}
+.final::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,8,12,0.94) 0%,rgba(6,8,12,0.75) 60%,rgba(6,8,12,0.95) 100%)}
+.final-inner{position:relative;z-index:1;text-align:center;max-width:780px;margin:0 auto}
+.final h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,7vw,96px);line-height:0.95;color:var(--cream);margin-bottom:28px;letter-spacing:-0.005em}
+.final h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--electric);font-weight:600}
+.final p{font-size:17px;color:var(--text-muted);max-width:54ch;margin:0 auto 40px;line-height:1.65;font-weight:300}
+.final-cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--void-deep);border-top:1px solid var(--border);padding:60px 0 40px}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;max-width:1320px;margin-left:auto;margin-right:auto;padding:0 28px}
+@media(max-width:880px){.footer-inner{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.footer-inner{grid-template-columns:1fr}}
+.footer-brand p{font-size:13px;color:var(--text-muted);line-height:1.7;margin-top:18px;max-width:32ch;font-weight:300}
+.footer-col h4{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:0.16em;color:var(--electric);margin-bottom:18px;text-transform:uppercase}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{font-size:13px;color:var(--text-muted);transition:color 0.2s;font-weight:300}
+.footer-col a:hover{color:var(--electric-bright)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-size:11px;color:var(--text-dim);letter-spacing:0.04em;max-width:1320px;margin:0 auto;padding-left:28px;padding-right:28px}
+
+.demo-strip{position:fixed;bottom:14px;left:14px;right:14px;background:rgba(56,153,236,0.94);color:var(--void-deep);padding:10px 18px;border-radius:1px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;z-index:200;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.demo-strip button{background:var(--void-deep);color:var(--electric-bright);border:0;padding:6px 12px;font-size:10px;letter-spacing:0.12em;cursor:pointer;border-radius:1px;font-weight:700}
+
+</style>
+</head>
+<body>
+
+<div class="demo-strip" id="demo-strip">
+  <span>Sample build by AG1 Consulting &middot; Dave&rsquo;s real Kings partnership imagery, customer cars, and bay photography slot in on Day 1.</span>
+  <button onclick="document.getElementById('demo-strip').remove()">Hide</button>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="logo">DAVE&rsquo;S<span class="em">Auto</span> DETAILS<span class="sub">CA + AZ</span></a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#areas">Service Areas</a>
+      <a href="#founder">The Team</a>
+      <a href="#guide">PPF Guide</a>
+      <a href="#final" class="nav-cta">Book a bay</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="kings-badge"><span class="crown"></span>Official Detailer of the Sacramento Kings</div>
+    <h1>Championship-grade <em>paint</em>.<br>Two-state operation.</h1>
+    <div class="hero-divider"></div>
+    <p class="hero-sub"><strong>The official detailer of the Sacramento Kings.</strong> Premium ceramic coating, paint protection film, and paint correction across California and Arizona. Athlete-trusted, factory-finish work for owners who treat their car the way Kings treat the court.</p>
+    <div class="hero-cta-row">
+      <a href="#final" class="cta-primary">Book a bay</a>
+      <a href="#gallery" class="cta-ghost">See real corrections</a>
+    </div>
+  </div>
+  <aside class="hero-meta">
+    <div class="hero-meta-label">Two-state coverage</div>
+    <dl class="hero-meta-grid">
+      <div><dt>CA</dt><dd>Sacramento HQ</dd></div>
+      <div><dt>AZ</dt><dd>Phoenix metro</dd></div>
+      <div><dt>NBA</dt><dd>Kings official</dd></div>
+      <div><dt>OEM</dt><dd>Grade work</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section class="trust" id="trust">
+  <div class="container">
+    <div class="trust-header">
+      <h2>The trust surface most detail shops <em>can&rsquo;t earn</em>.</h2>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-tile"><div class="stat-num">NBA</div><div class="stat-label">Sacramento Kings</div></div>
+      <div class="stat-tile"><div class="stat-num">2</div><div class="stat-label">States covered</div></div>
+      <div class="stat-tile"><div class="stat-num">PPF</div><div class="stat-label">Certified installers</div></div>
+      <div class="stat-tile"><div class="stat-num">10<span class="small">yr</span></div><div class="stat-label">Ceramic warranty</div></div>
+      <div class="stat-tile"><div class="stat-num">OEM</div><div class="stat-label">Grade finish</div></div>
+      <div class="stat-tile"><div class="stat-num">5.0</div><div class="stat-label">Avg review</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-eyebrow">02 &mdash; Two services. One bar.</div>
+    <h2 class="section-title">Pick your <em>protection</em>.</h2>
+    <p class="section-sub">Two completely different buyer paths. PPF protects your factory paint physically. Ceramic protects it chemically. Most detail shops blur the two; we don&rsquo;t.</p>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600&q=80')"></div>
+        <div class="service-overlay"></div>
+        <div class="service-meta"><span class="service-tag">Premium &middot; PPF</span><h3>Paint Protection <em>Film</em></h3><p>Self-healing urethane film over factory paint. Stops rock chips, road debris, and chemical etching. Full front, full body, or track-pack coverage.</p></div>
+      </article>
+      <article class="service-card">
+        <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1600&q=80')"></div>
+        <div class="service-overlay"></div>
+        <div class="service-meta"><span class="service-tag">Premium &middot; Ceramic</span><h3>Ceramic <em>Coating</em></h3><p>9H-grade nano-ceramic over corrected paint. Hydrophobic, UV-resistant, gloss-amplifying. 5- and 10-year warranty options.</p></div>
+      </article>
+      <article class="service-card">
+        <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1486496146582-9ffcd0b2b2b7?w=1600&q=80')"></div>
+        <div class="service-overlay"></div>
+        <div class="service-meta"><span class="service-tag">Foundation</span><h3>Paint <em>Correction</em></h3><p>Multi-stage compounding + polishing. Removes swirl marks, oxidation, deep scratches. Required prep step for ceramic + PPF.</p></div>
+      </article>
+      <article class="service-card">
+        <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1591293836027-e05b48473b67?w=1600&q=80')"></div>
+        <div class="service-overlay"></div>
+        <div class="service-meta"><span class="service-tag">Full Service</span><h3>Concours <em>Detail</em></h3><p>Show-grade interior + exterior, every panel, every seam. The detail level our Kings athlete clients book before media days.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-eyebrow">03 &mdash; Real corrections</div>
+    <h2 class="section-title">Six recent jobs. <em>Not airbrushed.</em></h2>
+    <p class="section-sub">Every gallery entry is a real customer car. Same panel, same lighting, same day &mdash; before correction and after. Click any one to see the full job album.</p>
+    <div class="gallery-grid">
+      <div class="gallery-card"><div class="gallery-split"><div class="gallery-half" data-label="Before" style="background-image:url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=900&q=70')"></div><div class="gallery-half gallery-after" data-label="After" style="background-image:url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=900&q=70')"></div><div class="gallery-divider"></div></div><div class="gallery-meta"><h4>Porsche 911 GT3 &middot; PPF Full Front</h4><p>Track-pack coverage &middot; same-day install</p></div></div>
+      <div class="gallery-card"><div class="gallery-split"><div class="gallery-half" data-label="Before" style="background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900&q=70')"></div><div class="gallery-half gallery-after" data-label="After" style="background-image:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900&q=70')"></div><div class="gallery-divider"></div></div><div class="gallery-meta"><h4>Range Rover &middot; Ceramic 10yr</h4><p>Full correction + ceramic &middot; 4-day turnaround</p></div></div>
+      <div class="gallery-card"><div class="gallery-split"><div class="gallery-half" data-label="Before" style="background-image:url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=900&q=70')"></div><div class="gallery-half gallery-after" data-label="After" style="background-image:url('https://images.unsplash.com/photo-1542362567-b07e54358753?w=900&q=70')"></div><div class="gallery-divider"></div></div><div class="gallery-meta"><h4>Ferrari 488 &middot; Full Body PPF</h4><p>Two-week build &middot; show-grade finish</p></div></div>
+      <div class="gallery-card"><div class="gallery-split"><div class="gallery-half" data-label="Before" style="background-image:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=900&q=70')"></div><div class="gallery-half gallery-after" data-label="After" style="background-image:url('https://images.unsplash.com/photo-1591293836027-e05b48473b67?w=900&q=70')"></div><div class="gallery-divider"></div></div><div class="gallery-meta"><h4>Tesla Plaid &middot; Paint Correction</h4><p>Multi-stage compound + polish</p></div></div>
+      <div class="gallery-card"><div class="gallery-split"><div class="gallery-half" data-label="Before" style="background-image:url('https://images.unsplash.com/photo-1502877338535-766e1452684a?w=900&q=70')"></div><div class="gallery-half gallery-after" data-label="After" style="background-image:url('https://images.unsplash.com/photo-1486496146582-9ffcd0b2b2b7?w=900&q=70')"></div><div class="gallery-divider"></div></div><div class="gallery-meta"><h4>Lamborghini Huracan &middot; Concours</h4><p>Pre-media-day full detail</p></div></div>
+      <div class="gallery-card"><div class="gallery-split"><div class="gallery-half" data-label="Before" style="background-image:url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=900&q=70')"></div><div class="gallery-half gallery-after" data-label="After" style="background-image:url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=900&q=70')"></div><div class="gallery-divider"></div></div><div class="gallery-meta"><h4>Mercedes G-Wagen &middot; Ceramic 5yr</h4><p>Daily-driver protection &middot; 3-day install</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="method" id="method">
+  <div class="container">
+    <div class="method-header">
+      <div>
+        <div class="section-eyebrow">04 &mdash; The Bay Method</div>
+        <h2 class="section-title">Four phases. <em>One bay door</em>, no hand-offs.</h2>
+      </div>
+      <p class="section-sub">Your car doesn&rsquo;t move between technicians. One installer, one bay, one project &mdash; from the inspection through the final inspection.</p>
+    </div>
+    <div class="method-steps">
+      <div class="method-step"><span class="method-num">01</span><h3>Inspection</h3><p>Paint-depth gauge readings, swirl-mark mapping, panel-by-panel check. We tell you what your car actually needs and what it doesn&rsquo;t.</p><div class="duration">90 min &middot; on-site</div></div>
+      <div class="method-step"><span class="method-num">02</span><h3>Correction</h3><p>Multi-stage compounding + polishing. The prep most shops skip. PPF and ceramic only work on a properly corrected substrate.</p><div class="duration">1-3 days</div></div>
+      <div class="method-step"><span class="method-num">03</span><h3>Install</h3><p>PPF or ceramic. Climate-controlled bay, dust-free environment, same installer start-to-finish. Photographed every step.</p><div class="duration">2-7 days by scope</div></div>
+      <div class="method-step"><span class="method-num">04</span><h3>Final QC</h3><p>Light-tunnel inspection. Hydrophobic test for ceramic. Edge-seal check for PPF. Walk-around with you before keys back.</p><div class="duration">Final 60 min</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="container">
+    <div class="section-eyebrow">05 &mdash; Service areas</div>
+    <h2 class="section-title">Six high-vehicle-density metros. <em>Two bays.</em></h2>
+    <p class="section-sub">Sacramento HQ serves the Northern California luxury corridor. Phoenix bay serves the Arizona supercar circuit. Each market has its own permit context and seasonal install windows.</p>
+    <div class="areas-grid">
+      <article class="area-card"><div class="area-img" style="background-image:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80')"></div><div class="area-overlay"></div><div class="area-meta"><h3>Sacramento</h3><p>HQ &middot; CA bay</p><div class="area-stat">Most-booked location</div></div></article>
+      <article class="area-card"><div class="area-img" style="background-image:url('https://images.unsplash.com/photo-1502877338535-766e1452684a?w=1200&q=80')"></div><div class="area-overlay"></div><div class="area-meta"><h3>Roseville</h3><p>Folsom &middot; El Dorado Hills</p><div class="area-stat">25 min from CA bay</div></div></article>
+      <article class="area-card"><div class="area-img" style="background-image:url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1200&q=80')"></div><div class="area-overlay"></div><div class="area-meta"><h3>El Dorado Hills</h3><p>Cameron Park &middot; Granite Bay</p><div class="area-stat">35 min from CA bay</div></div></article>
+      <article class="area-card"><div class="area-img" style="background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=80')"></div><div class="area-overlay"></div><div class="area-meta"><h3>Scottsdale</h3><p>Old Town &middot; North Scottsdale</p><div class="area-stat">AZ bay &middot; main metro</div></div></article>
+      <article class="area-card"><div class="area-img" style="background-image:url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=80')"></div><div class="area-overlay"></div><div class="area-meta"><h3>Paradise Valley</h3><p>Mountain Shadows &middot; Lincoln</p><div class="area-stat">15 min from AZ bay</div></div></article>
+      <article class="area-card"><div class="area-img" style="background-image:url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1200&q=80')"></div><div class="area-overlay"></div><div class="area-meta"><h3>Arcadia &middot; Phoenix</h3><p>Biltmore &middot; Camelback East</p><div class="area-stat">20 min from AZ bay</div></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="guide" id="guide">
+  <div class="container">
+    <div class="guide-inner">
+      <div>
+        <div class="section-eyebrow">06 &mdash; Free PPF Buyer&rsquo;s Guide</div>
+        <h2>The 18-page guide every <em>luxury owner</em> reads <strong>before</strong> picking an installer.</h2>
+        <p>Self-healing PPF vs glossy non-self-healing. Full-front vs track-pack coverage. The five questions to ask any installer before you sign. How to read a bay&rsquo;s gallery for honest correction work. PPF cost ranges by car class + scope.</p>
+        <p><strong>One PDF. Saves you the &ldquo;why didn&rsquo;t I know that&rdquo; conversation after install.</strong></p>
+        <ul class="guide-features">
+          <li>Self-healing vs glossy &middot; what each costs you</li>
+          <li>Full-front vs track-pack vs full-body coverage</li>
+          <li>Five questions every installer should answer</li>
+          <li>Cost ranges by car class &middot; from daily-driver to supercar</li>
+          <li>Aftercare playbook &middot; what NOT to do in week one</li>
+        </ul>
+        <form class="guide-form" onsubmit="event.preventDefault();alert('Demo only.');">
+          <input type="email" placeholder="Your best email" required>
+          <button type="submit" class="cta-primary">Send the guide</button>
+        </form>
+        <p class="guide-disclaimer">Free PDF. Single-tap unsubscribe. Twice-monthly emails with new install case studies + Kings athlete builds.</p>
+      </div>
+      <div>
+        <div class="guide-cover">
+          <div>
+            <div class="guide-cover-tag">Dave&rsquo;s Auto Details &middot; Guide</div>
+            <p class="guide-cover-meta-top">Edition 2026 &middot; 18 pages</p>
+          </div>
+          <h3 class="guide-cover-title">The <em>PPF</em> Buyer&rsquo;s Guide</h3>
+          <div class="guide-cover-meta">A bay-grade playbook for luxury owners</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="founder" id="founder">
+  <div class="container">
+    <div class="founder-inner">
+      <div class="founder-photo">
+        <div class="founder-quote">The Kings could call any shop in California. They call us. That&rsquo;s the standard we hold every customer car to &mdash; whether it&rsquo;s a daily Range Rover or a Pebble Beach Concours build.</div>
+      </div>
+      <div>
+        <div class="section-eyebrow">07 &mdash; The team behind the bay</div>
+        <h2>Two states. <em>One installer</em> on every car.</h2>
+        <p>Dave&rsquo;s Auto Details runs two bays &mdash; Sacramento HQ in California and a Phoenix-metro install in Arizona. Both run the same protocol: <strong>one installer per car, end to end.</strong> No shop-floor hand-offs. No junior tech finishing a senior tech&rsquo;s job.</p>
+        <p>The Sacramento Kings partnership is the trust signal that travels furthest. <strong>The work that earns it is the same work we put on every customer car.</strong> Paint-depth gauges before any compound touches the paint. Climate-controlled bays during PPF install. Light-tunnel QC before the keys go back.</p>
+        <p>If you&rsquo;ve been quoted on PPF or ceramic by a chain or a mall-shop &mdash; bring us the invoice and we&rsquo;ll walk you through what&rsquo;s actually included and what isn&rsquo;t.</p>
+        <div class="founder-creds">
+          <div class="founder-cred"><div class="founder-cred-tag">NBA</div><div class="founder-cred-label">Kings official detailer</div></div>
+          <div class="founder-cred"><div class="founder-cred-tag">2 bays</div><div class="founder-cred-label">CA + AZ operation</div></div>
+          <div class="founder-cred"><div class="founder-cred-tag">OEM</div><div class="founder-cred-label">Grade-finish standard</div></div>
+          <div class="founder-cred"><div class="founder-cred-tag">10yr</div><div class="founder-cred-label">Ceramic warranty</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-eyebrow">08 &mdash; Owner receipts</div>
+    <h2 class="section-title">What owners say <em>after the keys</em> come back.</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testimonial-quote">Took my GT3 to three Sacramento shops for PPF quotes. Dave&rsquo;s was the only one that walked me through the corner-wrap edges with paint-depth readings. Booked on the spot.</div><div class="testimonial-cite">911 GT3 owner<span class="testimonial-cite-meta">Full-front PPF &middot; Sacramento bay</span></div></div>
+      <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testimonial-quote">My Range Rover came back better than it left the dealership. The hydrophobic test alone sold me on the 10-year ceramic.</div><div class="testimonial-cite">Range Rover owner<span class="testimonial-cite-meta">Ceramic 10yr &middot; Phoenix bay</span></div></div>
+      <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testimonial-quote">Pebble Beach build, two-week timeline, zero shortcuts. The judges noticed. The work paid for itself in trophy points.</div><div class="testimonial-cite">Concours collector<span class="testimonial-cite-meta">Full-body correction + PPF</span></div></div>
+    </div>
+    <p style="text-align:center;margin-top:32px;font-size:12px;color:var(--text-dim);font-style:italic">Quotes paraphrased from public reviews. Full attributable references on the discovery call.</p>
+  </div>
+</section>
+
+<section class="press" id="press">
+  <div class="container">
+    <div class="press-header"><h2>Where the work <em>shows up</em> outside the bay.</h2></div>
+    <div class="press-grid">
+      <div class="press-card"><div class="press-card-tag">Sacramento Kings</div><div class="press-card-label">NBA &middot; Official detailer</div></div>
+      <div class="press-card"><div class="press-card-tag">Pebble Beach</div><div class="press-card-label">Concours d&rsquo;Elegance builds</div></div>
+      <div class="press-card"><div class="press-card-tag">PPF</div><div class="press-card-label">Certified installers</div></div>
+      <div class="press-card"><div class="press-card-tag">Ceramic Pro</div><div class="press-card-label">Authorised application centre</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="final">
+  <div class="container final-inner">
+    <div class="section-eyebrow" style="justify-content:center">09 &mdash; Book the bay</div>
+    <h2>Inspection first. <em>Quote second.</em></h2>
+    <p>Bring the car to the bay. Ninety-minute inspection with paint-depth readings + walk-around. You leave with a written quote and an honest read on what the car actually needs.</p>
+    <div class="final-cta-row">
+      <a href="#guide" class="cta-ghost">Read the PPF guide</a>
+      <a href="tel:+19162415804" class="cta-primary">Book Sacramento bay</a>
+      <a href="tel:+14808104673" class="cta-primary">Book Phoenix bay</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">DAVE&rsquo;S<span class="em">Auto</span> DETAILS<span class="sub">CA + AZ</span></div>
+      <p>Official detailer of the Sacramento Kings. Premium ceramic, paint protection film, paint correction. Two-state operation across California and Arizona.</p>
+    </div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="#services">Paint Protection Film</a></li><li><a href="#services">Ceramic Coating</a></li><li><a href="#services">Paint Correction</a></li><li><a href="#services">Concours Detail</a></li></ul></div>
+    <div class="footer-col"><h4>Locations</h4><ul><li><a href="tel:+19162415804">Sacramento (916) 241-5804</a></li><li><a href="tel:+14808104673">Phoenix (480) 810-4673</a></li><li><a href="#areas">Service areas</a></li></ul></div>
+    <div class="footer-col"><h4>Reach</h4><ul><li><a href="#final">Book a bay</a></li><li><a href="#guide">Free PPF guide</a></li><li><a href="https://www.instagram.com/davesautodetails/">Instagram</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <div>&copy; 2026 Dave&rsquo;s Auto Details &middot; Sacramento &middot; Phoenix</div>
+    <div style="display:flex;gap:14px"><a href="https://www.instagram.com/davesautodetails/">Instagram</a><a href="https://www.youtube.com/@Davesautodetails">YouTube</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
