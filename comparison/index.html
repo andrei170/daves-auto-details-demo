@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dave's Auto Details &middot; Before vs After &middot; AG1 Consulting</title>
+<meta name="description" content="The Sacramento Kings official detailer. Two-state operation. 0 of 4 AI search recommendations across the queries luxury vehicle owners type. Audit + 90-day plan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+:root {
+  --void: #0d1117;
+  --void-deep: #06080c;
+  --void-elev: #161b22;
+  --steel: #5b6679;
+  --chrome: #a8b2c1;
+  --electric: #3899ec;
+  --electric-bright: #5fceff;
+  --kings-purple: #5a2d81;
+  --kings-purple-bright: #7d4aa8;
+  --silver: #d8dde6;
+  --line: rgba(168, 178, 193, 0.15);
+  --red-x: #d9534f;
+  --green: #5cb85c;
+  --display: 'Bebas Neue', Inter, sans-serif;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--void-deep); color: var(--silver); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: var(--electric); text-decoration: none; }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+
+.hero { padding: 120px 0 80px; text-align: center; position: relative; }
+.hero::before { content: ''; position: absolute; top: 5%; left: 50%; transform: translateX(-50%); width: 900px; height: 600px; background: radial-gradient(ellipse, rgba(90, 45, 129, 0.18), transparent 65%); filter: blur(80px); pointer-events: none; }
+.eyebrow { font-family: var(--display); font-size: 14px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--kings-purple-bright); font-weight: 400; margin-bottom: 24px; display: block; position: relative; z-index: 2; }
+.hero h1 { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: clamp(48px, 7vw, 96px); line-height: 1; letter-spacing: -0.015em; max-width: 1080px; margin: 0 auto 32px; position: relative; z-index: 2; color: #fff; }
+.hero h1 em { font-style: italic; color: var(--kings-purple-bright); }
+.hero p { color: rgba(216, 221, 230, 0.78); font-size: 18px; max-width: 720px; margin: 0 auto; line-height: 1.6; position: relative; z-index: 2; }
+
+.section { padding: 80px 0; position: relative; }
+.section.alt { background: var(--void); }
+.section-title { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: clamp(32px, 4vw, 56px); letter-spacing: -0.015em; line-height: 1.05; margin-bottom: 16px; color: #fff; }
+.section-title em { font-style: italic; color: var(--kings-purple-bright); }
+.section-sub { color: rgba(216, 221, 230, 0.72); font-size: 17px; margin-bottom: 56px; max-width: 720px; line-height: 1.6; }
+
+.compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.compare-card { border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: var(--void-elev); transition: all 0.3s; }
+.compare-card:hover { border-color: var(--kings-purple-bright); transform: translateY(-4px); }
+.compare-label { padding: 16px 24px; font-family: var(--display); font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; }
+.compare-label.current { background: rgba(217, 83, 79, 0.10); color: var(--red-x); border-bottom: 1px solid rgba(217, 83, 79, 0.3); }
+.compare-label.new { background: rgba(125, 74, 168, 0.12); color: var(--kings-purple-bright); border-bottom: 1px solid var(--line); }
+.compare-preview { aspect-ratio: 16/10; display: flex; align-items: center; justify-content: center; }
+.compare-preview-content h3 { font-family: var(--serif); font-style: italic; font-size: 32px; font-weight: 500; }
+.compare-preview-content p { font-size: 14px; margin-top: 12px; }
+.compare-preview.current-bg { background: linear-gradient(135deg, var(--void-deep), var(--void-elev)); }
+.compare-preview.current-bg h3 { color: var(--silver); }
+.compare-preview.current-bg p { color: var(--steel); }
+.compare-preview.new-bg { background: linear-gradient(135deg, var(--kings-purple), var(--void-deep)); }
+.compare-preview.new-bg h3 { color: #fff; }
+.compare-preview.new-bg p { color: rgba(255,255,255,0.78); }
+.compare-body { padding: 28px 32px; }
+.compare-body h4 { font-family: var(--serif); font-style: italic; font-size: 24px; font-weight: 500; margin-bottom: 8px; color: #fff; }
+.compare-body p { color: rgba(216, 221, 230, 0.72); font-size: 14px; margin-bottom: 20px; }
+.compare-body ul { list-style: none; margin-bottom: 24px; }
+.compare-body li { padding: 6px 0; font-size: 14px; color: rgba(216, 221, 230, 0.78); display: flex; align-items: flex-start; gap: 10px; }
+.compare-body li::before { font-size: 12px; margin-top: 2px; flex-shrink: 0; font-weight: 700; }
+.current li::before { content: '\2717'; color: var(--red-x); }
+.new li::before { content: '\2713'; color: var(--green); }
+.compare-cta { display: inline-flex; align-items: center; gap: 8px; padding: 12px 26px; border-radius: 1px; font-family: var(--display); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; transition: all 0.25s; }
+.cta-current { border: 1px solid rgba(217, 83, 79, 0.4); color: var(--red-x); }
+.cta-current:hover { background: rgba(217, 83, 79, 0.08); }
+.cta-new { background: var(--kings-purple); color: #fff; }
+.cta-new:hover { background: var(--kings-purple-bright); }
+
+.bombshell-section { background: var(--void); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.bombshell-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: center; }
+.bombshell-stat { font-family: var(--serif); font-style: italic; font-size: clamp(80px, 14vw, 200px); font-weight: 500; line-height: 1; color: var(--kings-purple-bright); letter-spacing: -0.02em; }
+.bombshell-stat-label { font-family: var(--display); font-size: 14px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--steel); margin-top: 18px; }
+.bombshell-content h2 { font-family: var(--serif); font-style: italic; font-size: clamp(32px, 4vw, 56px); font-weight: 500; line-height: 1.05; margin-bottom: 24px; color: #fff; }
+.bombshell-content h2 em { font-style: italic; color: var(--kings-purple-bright); }
+.bombshell-content p { color: rgba(216, 221, 230, 0.85); font-size: 17px; line-height: 1.7; margin-bottom: 16px; }
+.bombshell-content p strong { color: #fff; font-weight: 600; }
+
+.plan-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px; }
+.plan-card { padding: 32px; background: var(--void-elev); border: 1px solid var(--line); border-radius: 4px; transition: all 0.3s; }
+.plan-card:hover { border-color: var(--kings-purple-bright); transform: translateY(-4px); }
+.plan-num { font-family: var(--display); font-size: 14px; letter-spacing: 0.22em; color: var(--kings-purple-bright); margin-bottom: 16px; display: block; }
+.plan-card h4 { font-family: var(--serif); font-style: italic; font-size: 24px; font-weight: 500; line-height: 1.15; margin-bottom: 12px; color: #fff; }
+.plan-card p { color: rgba(216, 221, 230, 0.68); font-size: 14px; line-height: 1.6; }
+.plan-week { font-family: var(--display); font-size: 12px; letter-spacing: 0.22em; color: var(--electric); margin-top: 16px; display: inline-block; }
+
+.scorecard { border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: var(--void-elev); }
+.scorecard-header { display: grid; grid-template-columns: 2fr 1fr 1fr; padding: 24px 32px; background: var(--void-deep); border-bottom: 1px solid var(--line); font-family: var(--display); font-size: 12px; letter-spacing: 0.28em; color: var(--steel); }
+.scorecard-row { display: grid; grid-template-columns: 2fr 1fr 1fr; padding: 18px 32px; border-bottom: 1px solid var(--line); align-items: center; }
+.scorecard-row:last-child { border-bottom: none; }
+.scorecard-row:hover { background: rgba(125, 74, 168, 0.05); }
+.scorecard-label { font-size: 15px; color: var(--silver); }
+.scorecard-cell { font-size: 14px; }
+.scorecard-cell.current { color: var(--red-x); }
+.scorecard-cell.new { color: var(--green); font-weight: 600; }
+
+.cta-section { padding: 120px 0; text-align: center; }
+.cta-section h2 { font-family: var(--serif); font-style: italic; font-size: clamp(36px, 5vw, 64px); font-weight: 500; letter-spacing: -0.015em; margin-bottom: 24px; line-height: 1.05; color: #fff; }
+.cta-section h2 em { font-style: italic; color: var(--kings-purple-bright); }
+.cta-section p { color: rgba(216, 221, 230, 0.72); font-size: 17px; margin-bottom: 40px; max-width: 580px; margin-left: auto; margin-right: auto; }
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-button { display: inline-flex; align-items: center; gap: 8px; padding: 18px 40px; border-radius: 1px; font-family: var(--display); font-size: 13px; letter-spacing: 0.22em; transition: all 0.25s; }
+.cta-button.primary { background: var(--kings-purple); color: #fff; }
+.cta-button.primary:hover { background: var(--kings-purple-bright); transform: translateY(-2px); }
+.cta-button.ghost { border: 1px solid var(--line); color: var(--silver); }
+.cta-button.ghost:hover { border-color: var(--kings-purple-bright); }
+
+footer { padding: 32px 0; border-top: 1px solid var(--line); text-align: center; font-size: 12px; color: var(--steel); }
+footer a { color: var(--kings-purple-bright); }
+
+@media (max-width: 1024px) { .compare-grid { grid-template-columns: 1fr; } .bombshell-grid { grid-template-columns: 1fr; gap: 32px; } .plan-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 720px) { .plan-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Prepared for Dave Berstein &middot; AG1 Consulting</span>
+    <h1>The Sacramento Kings official detailer.<br>AI search has <em>never heard</em> of you.</h1>
+    <p>What davesautodetails.com looks like to a Sacramento or Phoenix luxury vehicle owner Googling ceramic, PPF, or paint correction tonight versus what 90 days of schema, two-state landing pages, and an athlete-trusted authority strip could deliver.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Dave's: <em>before vs after</em></h2>
+    <p class="section-sub">Same NBA partnership. Same two-state operation. Same premium ceramic + PPF + paint correction stack. Two very different chances of being recommended when the buyer compares Ceramic Pro, O'Donoghue, PPF Werks, and HQD tonight.</p>
+    <div class="compare-grid">
+      <div class="compare-card">
+        <div class="compare-label current">Today &middot; Live Site</div>
+        <div class="compare-preview current-bg"><div class="compare-preview-content"><h3>davesautodetails.com</h3><p>Currently live &middot; Click to view</p></div></div>
+        <div class="compare-body current">
+          <h4>What's there now</h4>
+          <p>The NBA partnership exists. The two-state operation exists. The athlete client roster exists. None of it surfaces in the structured data layer that decides who AI search recommends.</p>
+          <ul>
+            <li>Sacramento Kings official detailer credential buried below the fold</li>
+            <li>Zero AI engine recommendations for "best ceramic coating Sacramento" or "PPF Phoenix"</li>
+            <li>No JSON-LD AutoBodyShop, Service, Review, or FAQ schema</li>
+            <li>No Sponsorship schema linking to the Sacramento Kings entity</li>
+            <li>One landing page covering both Sacramento and Phoenix (no city separation)</li>
+            <li>No service-deep pages for ceramic / PPF / paint correction per city</li>
+            <li>Ceramic Pro, O'Donoghue, PPF Werks, TINT 360, HQD dominate the AI Overview</li>
+          </ul>
+          <a href="https://davesautodetails.com/" target="_blank" rel="noopener" class="compare-cta cta-current">View Live Site &rarr;</a>
+        </div>
+      </div>
+      <div class="compare-card">
+        <div class="compare-label new">Proposed &middot; A+ Rebuild</div>
+        <div class="compare-preview new-bg"><div class="compare-preview-content"><h3>Dave's, athlete-trusted</h3><p>Click to explore the demo &rarr;</p></div></div>
+        <div class="compare-body new">
+          <h4>What we'd ship</h4>
+          <p>A schema-and-citation rebuild that puts the Sacramento Kings credential in Google's structured data, splits Sacramento and Phoenix into their own keyword universes, and surfaces athlete-trust as the primary differentiator AI engines reward.</p>
+          <ul>
+            <li>Full AutoBodyShop + Service + Review + FAQ + Sponsorship schema</li>
+            <li>Sacramento Kings credential in title tag, H1, OG image, hero strip</li>
+            <li>6 city-specific landing pages (Sacramento ceramic / PPF / correction + Phoenix ceramic / PPF / correction)</li>
+            <li>Two separate Google Business Profiles optimized + review-velocity automation</li>
+            <li>Yelp Top 10 push + Sacramento + Phoenix Magazine editorial pitches</li>
+            <li>Athlete client wall + before/after case study library</li>
+            <li>Performance gate: top 10 for "ceramic coating Sacramento" by day 90, or work continues</li>
+          </ul>
+          <a href="../" class="compare-cta cta-new">Open the Demo &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bombshell-section">
+  <div class="container">
+    <div class="bombshell-grid">
+      <div>
+        <div class="bombshell-stat">0/4</div>
+        <div class="bombshell-stat-label">AI Engine Recommendations</div>
+      </div>
+      <div class="bombshell-content">
+        <h2>An NBA partnership is the moat. <em>AI search</em> doesn't know it exists.</h2>
+        <p>We asked ChatGPT, Perplexity, and Google's AI Overview the four queries Sacramento and Phoenix luxury vehicle owners actually type. Across all four, Dave's was recommended zero times. The lists were dominated by Ceramic Pro, O'Donoghue Customs, PPF Werks, TINT 360, HQD.</p>
+        <p><strong>None of them have an NBA team partnership.</strong> The reason they're being recommended is not equipment, products, or process. It's schema-readability and citation density. Both are fixable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">The <em>90-day</em> plan.</h2>
+    <p class="section-sub">Four phases. By day 90, Dave's is in the AI Overview shortlist for both Sacramento and Phoenix premium detailing queries, with the Sacramento Kings credential finally doing the work it's earned.</p>
+    <div class="plan-grid">
+      <div class="plan-card"><span class="plan-num">PHASE 01</span><h4>Foundation</h4><p>AutoBodyShop + Service + Review + FAQ + Sponsorship schema. Sacramento Kings credential in title/H1/OG. Two-city GBP optimization.</p><span class="plan-week">Weeks 1&ndash;2</span></div>
+      <div class="plan-card"><span class="plan-num">PHASE 02</span><h4>City Pages</h4><p>6 service-deep landing pages: Sacramento ceramic/PPF/correction + Phoenix ceramic/PPF/correction. Each schema-marked LocalBusiness.</p><span class="plan-week">Weeks 2&ndash;5</span></div>
+      <div class="plan-card"><span class="plan-num">PHASE 03</span><h4>Citation Campaign</h4><p>Sacramento Magazine + Phoenix Magazine. Yelp Top 10 push. The Drive / Carscoops / Motor1 pitches. 10-creator YouTube cross-pollination.</p><span class="plan-week">Weeks 3&ndash;8</span></div>
+      <div class="plan-card"><span class="plan-num">PHASE 04</span><h4>Reputation Flywheel</h4><p>Post-service SMS review automation (target 24+ new reviews/quarter). Athlete client story content. Monthly performance dashboard.</p><span class="plan-week">Weeks 6&ndash;12</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <h2 class="section-title">The <em>scorecard.</em></h2>
+    <p class="section-sub">Every signal Google and AI search engines check, the current davesautodetails.com graded against the 90-day rebuild.</p>
+    <div class="scorecard">
+      <div class="scorecard-header"><div>Signal</div><div>Today</div><div>After plan</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">AutoBodyShop + Service schema</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">&check; Full</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Sponsorship schema (Sacramento Kings)</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">&check; Live</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">FAQ schema</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">&check; 8+ Q&amp;As</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">City-specific landing pages</div><div class="scorecard-cell current">1 combined</div><div class="scorecard-cell new">6 dedicated</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Sacramento Kings credential surfaced</div><div class="scorecard-cell current">Buried</div><div class="scorecard-cell new">Hero strip</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">"Ceramic coating Sacramento" ranking</div><div class="scorecard-cell current">Not top 10</div><div class="scorecard-cell new">Top 5 target</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">"PPF Phoenix" ranking</div><div class="scorecard-cell current">Not top 10</div><div class="scorecard-cell new">Top 5 target</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">AI engine recommendation rate</div><div class="scorecard-cell current">0 of 4</div><div class="scorecard-cell new">3 of 4 target</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Two-city GBP optimization</div><div class="scorecard-cell current">Single</div><div class="scorecard-cell new">Both optimized</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Athlete client wall</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">&check; Live</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Design tier</div><div class="scorecard-cell current">B+</div><div class="scorecard-cell new">A+</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>The Sacramento luxury owner shopping<br>their next ceramic <em>tonight</em><br>can't find you.</h2>
+    <p>Right now, Google is sending them to Ceramic Pro Sacramento. Ninety days from now, that changes for both cities.</p>
+    <div class="cta-buttons">
+      <a href="mailto:info@andreicopy.net" class="cta-button primary">Book the Strategy Call &rarr;</a>
+      <a href="../" class="cta-button ghost">Open the Demo &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>AG1 Consulting &middot; Andrei Givero &middot; info@andreicopy.net &middot; <a href="https://andrei170.github.io/ag1/">andrei170.github.io/ag1</a></span>
+</footer>
+</body>
+</html>
